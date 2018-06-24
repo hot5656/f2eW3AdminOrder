@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+<i class="fas fa-hand-holding-usd"></i>
+<i class="fas fa-boxes"></i>
+<i class="fas fa-money-bill"></i>
+
+<i class="fas fa-clock"></i>
+<i class="fas fa-male"></i>
+&uarr;
+&darr;
+<i class="fas fa-caret-down"></i>
+*/
+/* 因為某些情況不能繼承故加 inherit 補強 - 如 input 不能繼承 body */
+* {
+/*  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-weight: inherit;*/
+
+  /* box size incluse padding and boarder */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+}
+body {
+	font-family: 'Roboto Medium', arial;     /* fonts roboto-medium */
+	/*font-family: Microsoft JhengHei;*/    /* 微軟正黑體 */
+	font-weight: bold;  	/* 粗體字 */
+	/* font-size: 16px; - 字型大小(default 16px), also support 120% mode */
+}
+a {
+	text-decoration: none;	/*無底線*/
+}
+.clear-fix {
+	clear: both;	/*對齊,div include height*/
+}
+.green {
+	color: #7ED321;
+}
+.red {
+	color: #D0021B;
+}
+.blue {
+	color: #4A90E2;
+}
+.white {
+	color: #FFFFFF;
+}
+.gray_9b {
+	color: #9B9B9B;
+}
+.bp_green {
+	background-color: #7ED321;
+}
+.bp_blue {
+	background-color: #4A90E2;
+}
+.bp_orange {
+	background-color: #F5A623;
+}
+.bp_gray_eb {
+	background-color: #EBEBEB;
+}
+.bp_gray_9b {
+	background-color: #9B9B9B;
+}
+.bp_black {
+	background-color: #000000;
+}
+
+/* layout css */
+.wrap {
+	position: relative; /* 絕對位置以此為準 */
+	max-width: 1024px; 	/* 最大寬度 */
+	margin: 0 auto;		/* 置至於中間 */
+	background: #F2F2F2;
+	/*border: 1px solid orange;*/
+}
+/* layout css - header */
+.header {
+	height: 70px;			/* 高度 */
+	background-color: #000000;
+	color: #FFFFFF;
+}
+/* layout css - content */
+.content {
+	min-height: 200px;
+	padding-left: 4.1%;
+	padding-right: 4.1%;
+	padding-top: 30px;
+	padding-bottom: 42px;
+}
+/* layout css - footer */
+.footer {
+	height: 60px;
+	padding-left: 4.1%;
+	padding-right: 4.1%;
+}
+
+/* header */
+.login {
+	float: left;
+	margin-left: 4.1%;
+	margin-top: 22px;
+	padding-right: 3.7%;
+	font-size: 24px;
+}
+.manu {
+	float: left;
+	margin-top: 22px;
+	line-height: 32px;
+}
+.manu_a{
+	margin-left: 42px;
+	padding-bottom: 22px;
+	color: #9B9B9B
+}
+.manu_a:hover {
+	color: #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+}
+.active{
+	color: #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+}
+.admin {
+	float: right;
+	margin-top: 22px;
+	line-height: 32px;
+	margin-right: 4.1%;
+}
+
+.footer .shift {
+	float: right;
+}
+.footer #active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.footer button {
+	width: 42px;
+	height: 42px;
+	font-size: 16px;
+	background-color: #FFFFFF;
+}
+.footer button:hover {
+	cursor:pointer;
+}
+
